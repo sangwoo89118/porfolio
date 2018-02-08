@@ -814,6 +814,20 @@ a.text-primary {
       text-transform: uppercase;
 }
 
+.resumeBtn{
+    color: rgba(0, 0, 0, 0.5);;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 5vmin;
+    padding: 10px 20px;
+}
+
+.resumeBtn:hover{
+  color: black;
+  border: 2px solid black;
+}
+
 @media (max-width: 420px) {
   .caption-bg .a1, .caption-bg .a2{
     font-size: 2em;
