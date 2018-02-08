@@ -814,6 +814,11 @@ a.text-primary {
       text-transform: uppercase;
 }
 
+@media (max-width: 420px) {
+  .caption-bg .a1, .caption-bg .a2{
+    font-size: 2em;
+  }
+}
 
 
 
