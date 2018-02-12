@@ -16,11 +16,11 @@ if(empty($message['name'])){
     $output['success'] = false;
     $output['messages'][] = 'missing name key';
 }
-$message['company'] = filter_var($_POST['company'], FILTER_SANITIZE_STRING);
-if(empty($message['name'])){
-    $output['success'] = false;
-    $output['messages'][] = 'missing name key';
-}
+// $message['company'] = filter_var($_POST['company'], FILTER_SANITIZE_STRING);
+// if(empty($message['name'])){
+//     $output['success'] = false;
+//     $output['messages'][] = 'missing name key';
+// }
 //Validate email field
 $message['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 if(empty($message['email'])){
@@ -28,11 +28,11 @@ if(empty($message['email'])){
     $output['messages'][] = 'invalid email key';
 }
 
-$message['phone'] = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
-if(empty($message['name'])){
-    $output['success'] = false;
-    $output['messages'][] = 'missing name key';
-}
+// $message['phone'] = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+// if(empty($message['name'])){
+//     $output['success'] = false;
+//     $output['messages'][] = 'missing name key';
+// }
 //Sanitize message
 $message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 if(empty($message['message'])){
@@ -69,11 +69,11 @@ $options = array(
     )
 );
 $mail->smtpConnect($options);
-$mail->From = $_POST['email'];  // sender's email address (shows in "From" field)
-$mail->FromName = $_POST['email'];   // sender's name (shows in "From" field)
+$mail->From = $message['email'];  // sender's email address (shows in "From" field)
+$mail->FromName = $message['name'];   // sender's name (shows in "From" field)
 $mail->addAddress('sangwoo89118@gmail.com', 'First Recipient');  // Add a recipient
 //$mail->addAddress('ellen@example.com');                        // Name is optional
-$mail->addReplyTo($_POST['email']);                          // Add a reply-to address
+$mail->addReplyTo($message['email']);                          // Add a reply-to address
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
 
