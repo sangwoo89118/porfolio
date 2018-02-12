@@ -81,7 +81,7 @@ $mail->addReplyTo($message['email']);                          // Add a reply-to
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Here is the subject'; //IP addresss
+$mail->Subject = 'Message from my Portfolio'; //IP addresss
 $mail->Body    = $message['message']; //whatever body that they sent me
 $mail->AltBody = htmlentities($message['message']); //
 $output = [
