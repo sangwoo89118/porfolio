@@ -17,10 +17,10 @@ $(document).ready(function() {
   } else {
     //desktop
     // Initialize WOW.js
-    wow = new WOW({
-      offset: 50
-    })
-    wow.init();
+    // wow = new WOW({
+    //   offset: 50
+    // })
+    // wow.init();
   }
 });
 
@@ -112,23 +112,23 @@ $(document).ready(function() {
   });
 
   // Magnific Popup jQuery Lightbox Gallery Settings
-  $('.gallery-link').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true
-    },
-    image: {
-      titleSrc: 'title'
-    }
-  });
+  // $('.gallery-link').magnificPopup({
+  //   type: 'image',
+  //   gallery: {
+  //     enabled: true
+  //   },
+  //   image: {
+  //     titleSrc: 'title'
+  //   }
+  // });
 
   // Magnific Popup Settings
-  $('.mix').magnificPopup({
-    type: 'image',
-    image: {
-      titleSrc: 'title'
-    }
-  });
+  // $('.mix').magnificPopup({
+  //   type: 'image',
+  //   image: {
+  //     titleSrc: 'title'
+  //   }
+  // });
 
   // Vide - Video Background Settings
   $('header.video').vide({
