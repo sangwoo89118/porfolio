@@ -856,4 +856,14 @@ a.text-primary {
 }
 
 
+.col-lg-2{
+  width: 16.67%;
+}
+
+.col-md-3, .col-3{
+  width: 25%
+}
+
+
+
 
