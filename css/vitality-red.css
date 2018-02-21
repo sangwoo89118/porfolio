@@ -507,8 +507,12 @@ header.video {
     margin: 1%;
   }
 
-  .caption-bg .a1, .caption-bg .a2{
+  .caption-bg .a1{
     font-size: 2em;
+  }
+
+  .caption-bg .a2{
+    font-size: 1.6em;
   }
 
 }
@@ -800,7 +804,7 @@ a.text-primary {
       top: 10%;
     color: white;
     position: relative;
-    font-size: 3em;
+    font-size: 2.6em;
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
@@ -855,6 +859,12 @@ a.text-primary {
   }
 }
 
-
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+}
 
 
