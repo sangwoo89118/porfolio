@@ -41,6 +41,15 @@ $(document).ready(function() {
     }
   });
 
+
+  //when user clicks outside of navbar, navbar closes
+  $(document).click(function(e){
+    if(!$(e.target).is('.navbar')){
+      $('.navbar-collapse').collapse('hide');
+    }
+  })
+
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
