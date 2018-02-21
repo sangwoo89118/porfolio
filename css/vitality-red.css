@@ -484,18 +484,18 @@ header.video {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .portfolio-grid .mix {
-    width: 100%;
+    width: 47%;
     margin: 1%; }
     .portfolio-grid .mix .portfolio-wrapper .caption{
       bottom: -395px;
 
     }
     .caption-bg .a1{
-      font-size: 4em;
+      font-size: 2em;
     }
 
     .caption-bg .a2{
-      font-size: 4em;
+      font-size: 1.6em;
     }
 
   }
