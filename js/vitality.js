@@ -54,9 +54,13 @@ $(document).ready(function() {
 
   // Collapse the navbar when page is scrolled
   $(window).scroll(function() {
+    $('.navbar-collapse').collapse('hide');
+
     if ($("#mainNav").offset().top > 100) {
+
       $("#mainNav").addClass("navbar-shrink");
     } else {
+
       $("#mainNav").removeClass("navbar-shrink");
     }
   });
